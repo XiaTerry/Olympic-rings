@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>奥运五环</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .circle ,.circle::before{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 10px solid;
+            position: absolute;
+        }
+        .circle::before{
+            content: '';
+            top: -10px;
+            left: -10px;
+        }
+        .blue::before{
+            border-color: blue;
+            z-index: 1;
+            border-bottom-color:transparent ;
+        }
+        .blue{
+            border-color: blue;
+            top: 0;
+            left: 0;
+        }
+        .black::before{
+            border-color: black;
+            z-index: 1;
+            border-left-color: transparent;
+        }
+        .black{
+            border-color: #000;
+            top: 0;
+            left: 230px;
+        }
+        .red::before{
+            border-color: red;
+            z-index: 1;
+            border-left-color: transparent;
+        }
+        .red{
+            border-color: red;
+            top: 0;
+            left: 460px;
+        }
+        .yellow::before{
+            border-color: yellow;
+        }
+        .yellow{
+            border-color: yellow;
+            top: 100px;
+            left: 110px;
+        }
+        .green::before{
+            border-color: green;
+            z-index: 2;
+            border-right-color: transparent;
+            border-top-color: transparent;
+        }
+        .green{
+            border-color: green;
+            top: 100px;
+            left: 340px;
+        }
+    </style>
+    </head>
+<body>
+    <div class="circle blue"></div>
+    <div class="circle black"></div>
+    <div class="circle red"></div>
+    <div class="circle yellow"></div>
+    <div class="circle green"></div>
+</body>
+</html>
